@@ -37,12 +37,22 @@ public class Rainfall {
 		}
 		*/
 		
+		//calculate average
 		int sum = 0;
 		for (int index = 0; index < rainDays.length; index++){
 			sum += rainDays[index];
 		}
 		double average = sum/rainDays.length;
 		JOptionPane.showMessageDialog(null, "Average is: " + average);
+		
+		//find the highest
+		int highest = rainDays[0];
+		for (int i = 0; i < rainDays.length; i++){
+			if (rainDays[i] > highest){
+				highest = rainDays[i];
+			}
+		}
+		JOptionPane.showMessageDialog(null, "Highest is: " + highest);
 
 	}
 
