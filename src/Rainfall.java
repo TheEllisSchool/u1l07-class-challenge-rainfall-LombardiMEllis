@@ -30,10 +30,19 @@ public class Rainfall {
 		}
 		
 		//print each month's rainy days
+		/*
 		for (int index = 0; index < months.length; index++){
 			JOptionPane.showMessageDialog(null, "In " + months[index]
 					+ " there were " + rainDays[index] + " days of rain.");
 		}
+		*/
+		
+		int sum = 0;
+		for (int index = 0; index < rainDays.length; index++){
+			sum += rainDays[index];
+		}
+		double average = sum/rainDays.length;
+		JOptionPane.showMessageDialog(null, "Average is: " + average);
 
 	}
 
